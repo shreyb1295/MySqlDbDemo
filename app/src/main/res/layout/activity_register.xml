@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#2D3238"
+    tools:context="com.example.shrey.mysqldbdemo.Register">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout8"></LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/name"
+        android:background="@drawable/etbox"
+        android:hint="Name"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearLayout4"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/new_user_name"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/etbox"
+        android:hint="User Name" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearLayout5"
+        android:layout_below="@+id/new_user_name"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/linearLayout6"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button3"
+        android:background="#EA4C89"
+        android:onClick="userReg"
+        android:layout_below="@+id/new_user_pass"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout9"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already registered? Log me in!"
+        android:id="@+id/textView2"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_centerHorizontal="true"
+        android:onClick="userLog" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:background="@drawable/etbox"
+        android:ems="10"
+        android:id="@+id/new_user_pass"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Password" />
+
+</RelativeLayout>
